@@ -1,6 +1,6 @@
 export const getAllProducts = async () => {
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API}/products`);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API}/products?limit=0`);
     
     if (!response.ok) {
       throw new Error('Network response was not ok');
