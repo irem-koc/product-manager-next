@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Navbar from "@/components/navbar/Navbar";
+import { AppProvider } from "@/provider/AppProvider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -27,8 +28,10 @@ export default function RootLayout({
         />
       </head>
       <body suppressHydrationWarning={true} className={inter.className}>
-        <Navbar />
-        {children}
+        <AppProvider>
+          <Navbar />
+          {children}
+        </AppProvider>
       </body>
     </html>
   );
