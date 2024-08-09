@@ -1,9 +1,9 @@
-import { AppProvider } from "@/provider/AppProvider";
+import Products from "@/components/products/Products";
 
 export default function Home() {
   return (
-    <main>
-      <AppProvider />
-    </main>
+    <>
+      <Products />
+    </>
   );
 }
