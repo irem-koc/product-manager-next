@@ -15,7 +15,7 @@ const Links = (props: Props) => {
         }  p-3 rounded-lg `}
         href={"/signin"}
       >
-        Sign In
+        Giriş Yap/Üye Ol
       </Link>
 
       <Link
@@ -33,7 +33,7 @@ const Links = (props: Props) => {
         } p-3 rounded-lg`}
         href={"/cart"}
       >
-        Cart
+        Sepetim
       </Link>
     </div>
   );
