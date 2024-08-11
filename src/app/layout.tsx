@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-page-custom-font */
+import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
 import { AppProvider } from "@/provider/AppProvider";
 import type { Metadata } from "next";
@@ -31,6 +32,7 @@ export default function RootLayout({
         <AppProvider>
           <Navbar />
           {children}
+          <Footer />
         </AppProvider>
       </body>
     </html>
